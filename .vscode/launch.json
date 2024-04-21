@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "mix_task",
+            "name": "Run Elixir Script",
+            "request": "launch",
+            "task": "run",
+            "taskArgs": [
+                "lib/hello_world.ex"
+            ], // Specify the path to your script
+            "projectDir": "${workspaceFolder}"
+        },
+        {
+            "type": "mix_task",
+            "name": "Run Elixir Tests",
+            "request": "launch",
+            "task": "run",
+            "taskArgs": [
+                "test/test_helper.exs"
+            ], // Specify the path to your script
+            "projectDir": "${workspaceFolder}"
+        }
+    ]
+}
